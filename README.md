@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Rolsa Energy
 
-First, run the development server:
+About
+Full-stack Next.js application featuring MongoDB integration, authentication, dashboard, and energy calculators. Rapid development project completed in 25 hours.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repsitory:
+   
+        git clone https://github.com/Charlie-Hunger/Rolsa-Energy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
+    
+        npm install
 
-## Deploy on Vercel
+3. Set up environment variables:
+    
+        DATABASE_URL=your_mongodb_connection_string
+    
+        JWT_SECRET=your_jwt_secret
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Run the development server:
+        
+        npm run dev
+ 
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Renewable Energy Solutions**
+    - Solar Panel installations
+    - EV Charging Points
+    - Smart Energy Management Meters
+- **Interactive Tools**
+    - Carbon Footprint Calculator
+    - Energy Usage Estimator
+    - Cost Savings Projections
+- **Customer Portal**
+    - User account management
+    - Appointment booking system
+    - Service history tracking
+- **Educational Content**
+    - Detailed information about carbon reduction
+    - Environmental impact resources
+    - Energy efficiency guides
+
+## Technology Stack
+
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Next.js API routes
+- **Database**: MongoDB with Mongoose
+- **Authentication**: Iron Session
+- **UI Components**: Custom components with shadcn/ui
+- **Styling**: Tailwind CSS with next-themes for dark mode support
+
+## Project Structure
+
+        ├── public/            # Static assets
+        ├── src/
+        │   ├── app/           # Next.js App Router
+        │   │   ├── auth/      # Authentication pages
+        │   │   └── ...        # Other app routes
+        │   └── lib/
+        │       ├── models/    # Database models
+        │       │   ├── User.ts
+        │       │   └── Booking.ts
+        │       └── dbConnect.ts  # Database connection utility
+## Contributing
+
+Contributions are always welcome!
+
+
+
