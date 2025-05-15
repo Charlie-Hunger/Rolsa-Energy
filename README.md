@@ -1,7 +1,6 @@
 
 # Rolsa Energy
 
-About
 Full-stack Next.js application featuring MongoDB integration, authentication, dashboard, and energy calculators. Rapid development project completed in 25 hours.
 
 
